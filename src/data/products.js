@@ -26,4 +26,6 @@ const makeProducts = (str) => {
 }
 const products = makeProducts(abc)
 
-const stock = products.map(e => ({ ProductId: e.id, stock: randomStock(8, 15) }))
+const stock = products.map(e => ({ productId: e.id, stock: randomStock(8, 15) }))
+
+export { stock, products }
