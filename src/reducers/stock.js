@@ -4,7 +4,6 @@ export default (stockState = [], action) => {
   const { type, id } = action
   switch (type) {
     case INCREMENT_STOCK:
-      console.log('increment stock')
       return stockState.map(e => {
         const newStock = { ...e }
         if (e.productId === id) {

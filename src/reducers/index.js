@@ -1,5 +1,7 @@
 import stock from './stock'
-import cart from './cart'
+import amount from './amount'
+import products from './products'
+
 import { combineReducers } from 'redux'
 
-export default combineReducers({ cart, stock })
+export default combineReducers({ amount, stock, products })
