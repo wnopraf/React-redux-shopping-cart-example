@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`amount reducer Another item to cart Cart state 1`] = `
+Array [
+  Object {
+    "amount": 6,
+    "productId": 3,
+  },
+  Object {
+    "amount": 1,
+    "productId": 4,
+  },
+  Object {
+    "amount": 3,
+    "productId": 5,
+  },
+  Object {
+    "amount": 4,
+    "productId": 6,
+  },
+  Object {
+    "amount": 2,
+    "productId": 7,
+  },
+  Object {
+    "amount": 1,
+    "productId": 8,
+  },
+  Object {
+    "amount": 3,
+    "productId": 9,
+  },
+]
+`;
