@@ -3,4 +3,6 @@ import thunk from 'redux-thunk'
 import { stock, products } from '../data/products'
 import cartReducer from '../reducers'
 
-createStore(cartReducer, { products, stock }, applyMiddleware(thunk))
+const store = createStore(cartReducer, { products, stock }, applyMiddleware(thunk))
+
+export default store

@@ -1,22 +1,25 @@
-import { INCREMENT_SOTCK, DECREMENT_SOTCK, INCREMENT_AMOUNT, DECREMENT_AMOUNT } from '../constants'
+import { INCREMENT_AMOUNT, DECREMENT_AMOUNT, INCREMENT_STOCK, DECREMENT_STOCK } from '../constants'
+import { selectIdItem } from '../util'
+const incrementStock = (id) => ({ type: INCREMENT_STOCK, id })
 
-const incrementStock = (id) => ({ type: INCREMENT_SOTCK, id })
-
-const decrementStock = (id) => ({ type: DECREMENT_SOTCK, id })
+const decrementStock = (id) => ({ type: DECREMENT_STOCK, id })
 
 const incrementAmount = (id) => ({ type: INCREMENT_AMOUNT, id })
 
 const decrementAmount = (id) => ({ type: DECREMENT_AMOUNT, id })
 
-export const incrementAction = (dispatch, getState) => (id) => {
+export const incrementAction = (id) => (dispatch, getState) => {
   const { stock } = getState()
   if (selectIdItem(stock, id).stock > 0) {
+    console.log('action-in')
     dispatch(decrementStock(id))
     dispatch(incrementAmount(id))
   }
 }
-export const decrementAction = (dispatch, getState) => (id) => {
-  dispatch(incrementStock(id))
-  dispatch(decrementAmount(id))
+export const decrementAction = (id) => (dispatch, getState) => {
+  const { cart } = getState()
+  if (selectIdItem(cart, id) && selectIdItem(cart, id).amount > 0) {
+    dispatch(incrementStock(id))
+    dispatch(decrementAmount(id))
+  }
 }
-const selectIdItem = (stateSlice, id) => stateSlice.find(e => e.productId === id)

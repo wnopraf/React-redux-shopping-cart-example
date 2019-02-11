@@ -1,4 +1,4 @@
-import { INCREMENT_STOCK, DECREMENT_SOTCK } from '../constants'
+import { INCREMENT_STOCK, DECREMENT_STOCK } from '../constants'
 
 export default (stockState = [], action) => {
   const { type, id } = action
@@ -11,7 +11,7 @@ export default (stockState = [], action) => {
         }
         return newStock
       })
-    case DECREMENT_SOTCK:
+    case DECREMENT_STOCK:
       return stockState.map(e => {
         const newStock = { ...e }
 

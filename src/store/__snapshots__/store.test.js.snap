@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`How store behaves on actions First store snap 1`] = `
+Object {
+  "amount": Array [],
+  "products": Array [
+    Object {
+      "id": 1,
+      "name": "product-A",
+      "prize": "147.17",
+    },
+    Object {
+      "id": 2,
+      "name": "product-B",
+      "prize": "91.78",
+    },
+    Object {
+      "id": 3,
+      "name": "product-C",
+      "prize": "139.51",
+    },
+    Object {
+      "id": 4,
+      "name": "product-D",
+      "prize": "76.43",
+    },
+    Object {
+      "id": 5,
+      "name": "product-E",
+      "prize": "99.69",
+    },
+    Object {
+      "id": 6,
+      "name": "product-F",
+      "prize": "124.42",
+    },
+    Object {
+      "id": 7,
+      "name": "product-G",
+      "prize": "86.04",
+    },
+    Object {
+      "id": 8,
+      "name": "product-H",
+      "prize": "121.05",
+    },
+    Object {
+      "id": 9,
+      "name": "product-I",
+      "prize": "130.44",
+    },
+    Object {
+      "id": 10,
+      "name": "product-J",
+      "prize": "90.88",
+    },
+    Object {
+      "id": 11,
+      "name": "product-K",
+      "prize": "94.98",
+    },
+    Object {
+      "id": 12,
+      "name": "product-E",
+      "prize": "90.93",
+    },
+    Object {
+      "id": 13,
+      "name": "product-L",
+      "prize": "138.89",
+    },
+    Object {
+      "id": 14,
+      "name": "product-M",
+      "prize": "99.31",
+    },
+    Object {
+      "id": 15,
+      "name": "product-N",
+      "prize": "84.24",
+    },
+    Object {
+      "id": 16,
+      "name": "product-Ñ",
+      "prize": "111.76",
+    },
+    Object {
+      "id": 17,
+      "name": "product-O",
+      "prize": "132.29",
+    },
+    Object {
+      "id": 18,
+      "name": "product-P",
+      "prize": "84.03",
+    },
+    Object {
+      "id": 19,
+      "name": "product-Q",
+      "prize": "115.00",
+    },
+    Object {
+      "id": 20,
+      "name": "product-R",
+      "prize": "144.68",
+    },
+    Object {
+      "id": 21,
+      "name": "product-S",
+      "prize": "77.10",
+    },
+    Object {
+      "id": 22,
+      "name": "product-T",
+      "prize": "99.03",
+    },
+    Object {
+      "id": 23,
+      "name": "product-U",
+      "prize": "92.04",
+    },
+    Object {
+      "id": 24,
+      "name": "product-V",
+      "prize": "93.25",
+    },
+    Object {
+      "id": 25,
+      "name": "product-W",
+      "prize": "106.48",
+    },
+    Object {
+      "id": 26,
+      "name": "product-Y",
+      "prize": "130.89",
+    },
+    Object {
+      "id": 27,
+      "name": "product-Z",
+      "prize": "60.40",
+    },
+  ],
+  "stock": Array [
+    Object {
+      "productId": 1,
+      "stock": 13,
+    },
+    Object {
+      "productId": 2,
+      "stock": 15,
+    },
+    Object {
+      "productId": 3,
+      "stock": 11,
+    },
+    Object {
+      "productId": 4,
+      "stock": 11,
+    },
+    Object {
+      "productId": 5,
+      "stock": 11,
+    },
+    Object {
+      "productId": 6,
+      "stock": 14,
+    },
+    Object {
+      "productId": 7,
+      "stock": 9,
+    },
+    Object {
+      "productId": 8,
+      "stock": 11,
+    },
+    Object {
+      "productId": 9,
+      "stock": 14,
+    },
+    Object {
+      "productId": 10,
+      "stock": 11,
+    },
+    Object {
+      "productId": 11,
+      "stock": 14,
+    },
+    Object {
+      "productId": 12,
+      "stock": 9,
+    },
+    Object {
+      "productId": 13,
+      "stock": 13,
+    },
+    Object {
+      "productId": 14,
+      "stock": 13,
+    },
+    Object {
+      "productId": 15,
+      "stock": 14,
+    },
+    Object {
+      "productId": 16,
+      "stock": 8,
+    },
+    Object {
+      "productId": 17,
+      "stock": 11,
+    },
+    Object {
+      "productId": 18,
+      "stock": 13,
+    },
+    Object {
+      "productId": 19,
+      "stock": 11,
+    },
+    Object {
+      "productId": 20,
+      "stock": 14,
+    },
+    Object {
+      "productId": 21,
+      "stock": 13,
+    },
+    Object {
+      "productId": 22,
+      "stock": 10,
+    },
+    Object {
+      "productId": 23,
+      "stock": 12,
+    },
+    Object {
+      "productId": 24,
+      "stock": 15,
+    },
+    Object {
+      "productId": 25,
+      "stock": 12,
+    },
+    Object {
+      "productId": 26,
+      "stock": 14,
+    },
+    Object {
+      "productId": 27,
+      "stock": 14,
+    },
+  ],
+}
+`;
