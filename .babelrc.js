@@ -6,6 +6,9 @@
   }], '@babel/react'
   ],
   plugins: [
-    ['styled-jsx/babel', {plugins: ['styled-jsx-plugin-sass']}]
+    [
+      "styled-jsx/babel",
+      { "plugins": ["styled-jsx-plugin-stylelint"] }
+    ] 
   ]
 }

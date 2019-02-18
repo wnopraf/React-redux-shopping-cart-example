@@ -4,8 +4,9 @@
   "description": "A cart shopping example in redux",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./public/index.html -p 3000",
-    "test": "jest"
+    "start": "parcel ./public/index.html -p 5000 --open",
+    "test": "jest",
+    "help": "parcel -h"
   },
   "keywords": [
     "redux",
@@ -20,11 +21,11 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.0.0",
     "jest": "^24.0.0",
-    "node-sass": "^4.11.0",
     "parcel-bundler": "^1.11.0",
     "standard": "^12.0.1",
     "styled-jsx": "^3.2.1",
-    "styled-jsx-plugin-sass": "^1.0.0"
+    "styled-jsx-plugin-stylelint": "^0.1.0",
+    "stylelint-config-recommended": "^2.1.0"
   },
   "dependencies": {
     "react": "^16.7.0",
@@ -37,6 +38,7 @@
   "standard": {
     "parser": "babel-eslint",
     "globals": [
+      "React",
       "describe",
       "test",
       "expect",
