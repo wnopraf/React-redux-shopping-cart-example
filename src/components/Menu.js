@@ -63,7 +63,7 @@ export default class extends Component {
         .ham-button {
             cursor: pointer;
          }
-         @media (min-width: 481px) {
+         @media (min-width: 480px) {
             .ham-button { 
                 display: none;
             }
@@ -76,7 +76,7 @@ export default class extends Component {
   }
   onResize () {
     console.log('inner-width', window.innerWidth)
-    if (window.innerWidth >= 479) {
+    if (window.innerWidth >= 478) {
       this.setState({ isOpen: true })
     } else if (this.state.isOpen) {
       this.setState({ isOpen: false })
