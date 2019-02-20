@@ -1,6 +1,10 @@
 import React from 'react'
-import Test from './components/test'
+import store from './store'
 import { render } from 'react-dom'
-const otherOb = { suki: 'pesti' }
+import Main from './components'
+import { Provider } from 'react-redux'
 
-render(<Test />, document.getElementById('app'))
+render(<Provider store={store}>
+  <Main />
+
+</Provider>, document.getElementById('app'))

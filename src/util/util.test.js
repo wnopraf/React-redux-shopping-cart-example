@@ -39,7 +39,7 @@ describe('Testing pagination utils', () => {
         })
       })
     })
-    describe.only('Page buttons', () => {
+    describe('Page buttons', () => {
       test('Has the right number of pages', () => {
         const pages = pageButtons(items)
         expect(pages).toBe(3)

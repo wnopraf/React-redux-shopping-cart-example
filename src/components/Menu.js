@@ -14,26 +14,41 @@ export default class extends Component {
       <a href='' className='menu__item'>Blog</a>
       <style jsx>{`
         .menu {
-            font-size: 10px;
             display: flex;
             flex-direction: column;
             text-align: center;
-            @media (min-width: 480px) {
-                flex-direction: row;
-            }
         }
-        
+        @media (min-width: 480px) {
+          .menu {
+            flex-direction: row;
+          }  
+        }
         .menu__item {
-            font-size: 1.6em;
-            padding: 1.6em 0;
+            font-size: 1.6rem;
+            padding: 1.6rem 0;
             text-decoration: none;
             color: black;
-            background: orange;
-            border: 1px solid darken(orange, 10%);
-            @media (min-width: 480px) {
-                padding: .6em 2em;
+            background: var(--treciary-color);
+            border: 1px solid var(--grey-color);
+        }
+        @media (min-width: 480px) {
+            .menu__item {
+                padding: .6rem 2rem;
+                border: none;
+            }          
+            .menu__item + .menu__item {
+              border-left: 1px solid var(--grey-color);
+            }
+            .menu__item:first-child {
+              border-left: 1px solid var(--grey-color);
+            }
+            .menu__item:last-child {
+              border-right: 1px solid var(--grey-color);
             }
         }
+       
+
+        
         
       
       `}</style>
@@ -47,7 +62,9 @@ export default class extends Component {
       <style jsx>{`
         .ham-button {
             cursor: pointer;
-            @media (min-width: 480px) {
+         }
+         @media (min-width: 481px) {
+            .ham-button { 
                 display: none;
             }
         }
@@ -59,12 +76,17 @@ export default class extends Component {
   }
   onResize () {
     console.log('inner-width', window.innerWidth)
-    if (window.innerWidth > 480) { this.setState({ isOpen: true }) }
+    if (window.innerWidth >= 479) {
+      this.setState({ isOpen: true })
+    } else if (this.state.isOpen) {
+      this.setState({ isOpen: false })
+    }
   }
 
   componentDidMount () {
     console.log('didMount')
     window.addEventListener('resize', this.onResize)
+    this.onResize()
   }
   componentWillUnmount () {
     window.removeEventListener('resize', this.onResize)
