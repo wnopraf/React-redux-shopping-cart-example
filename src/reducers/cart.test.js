@@ -1,7 +1,8 @@
 import { INCREMENT_AMOUNT, DECREMENT_AMOUNT } from '../constants'
 import { selectIdItem } from '../util'
 import amountReducer from './cart'
-import { products } from '../data/products'
+import data from '../data/products'
+const { products } = data
 
 const mockCart = products.slice(2, 9).map(({ id }) => ({ productId: id, amount: Math.floor(Math.random() * 6 + 1) }))
 describe('amount reducer', () => {

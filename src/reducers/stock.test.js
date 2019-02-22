@@ -1,14 +1,14 @@
 import stockReducer from './stock'
-import { stock } from '../data/products'
-import { INCREMENT_STOCK, DECREMENT_SOTCK } from '../constants'
-
+import data from '../data/products'
+import { INCREMENT_STOCK, DECREMENT_STOCK } from '../constants'
+const { stock } = data
 describe('stock reducer', () => {
   const incAction = {
     type: INCREMENT_STOCK,
     id: 3
   }
   const decAction = {
-    type: DECREMENT_SOTCK,
+    type: DECREMENT_STOCK,
     id: 6
   }
   test('return array', () => {
@@ -37,7 +37,7 @@ describe('stock reducer', () => {
   test('decrement action with stock 0', () => {
     expect.assertions(2)
     const fakeStock = [{ id: 4, stock: 0 }]
-    const decAction = { type: DECREMENT_SOTCK, id: 4 }
+    const decAction = { type: DECREMENT_STOCK, id: 4 }
     let afterAction = stockReducer(fakeStock, decAction)[0]
     expect(afterAction.stock).toBe(0)
     fakeStock.stock += 1

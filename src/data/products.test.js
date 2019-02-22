@@ -1,4 +1,5 @@
-import { products, stock } from './products'
+import data from './products'
+const { products, stock } = data
 
 describe('products', () => {
   test('products length', () => {
