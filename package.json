@@ -45,7 +45,9 @@
       "describe",
       "test",
       "expect",
-      "it"
+      "it",
+      "beforeEach",
+      "beforeAll"
     ]
   }
 }

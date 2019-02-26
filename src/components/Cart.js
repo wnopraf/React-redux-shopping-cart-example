@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { incrementAction, decrementAction } from '../actions'
-import { selectIdItem } from '../util'
+import { selectProductItem, selectIdItem } from '../util'
 import { connect } from 'react-redux'
 
-const CartItem = ({ products, cartItem, add, subtract, noStock }) => {
-  const productItem = selectIdItem(products, cartItem.productId)
-
-  return <div className='cart-item'>
+const CartItem = ({ products, cartItem, add, subtract, stock }) => {
+  const productItem = selectProductItem(products, cartItem.productId)
+  const stockItem = selectIdItem(stock, cartItem.productId)
+  return <div className='cart-item' data-productId={cartItem.productId}>
     <div className='item-view'>
       <div className='item__features'>
         <h5>{productItem.name}</h5>
@@ -15,17 +15,17 @@ const CartItem = ({ products, cartItem, add, subtract, noStock }) => {
     <div className='item-value'>
       <div className='item__prize'>
         <span className='prize'>prize</span>
-        <span className='value'>{productItem.prize}</span>
+        <span className='value'>{productItem.prize} x {cartItem.amount} = {(productItem.prize * cartItem.amount).toFixed(2)}</span>
       </div>
       <div className='item-buttons'>
         <span className='units'>units</span>
         <span className='buttons'>
-          <span className='add' onClick={add(cartItem.productId)}>+</span>
-          <span className='value'>{cartItem.amount}</span>
-          <span className='subtract' onClick={subtract(cartItem.productId)}>-</span>
+          <button data-add className={'add' + (stockItem.stock === 0 ? 'disabled' : '')} onClick={add}>+</button>
+          <span className='amount'>{cartItem.amount}</span>
+          <button data-subtract className='subtract' onClick={subtract}>-</button>
         </span>
       </div>
-      {noStock && <div className='no-stock'>Out of existences</div>}
+      {stockItem.stock === 0 && <div className='no-stock'>Out of existences</div>}
     </div>
   </div>
 }
@@ -33,18 +33,26 @@ const CartItem = ({ products, cartItem, add, subtract, noStock }) => {
 class Cart extends Component {
   constructor (props) {
     super(props)
-    this.state = { noStock: false }
+    this.state = { isOpen: true }
     this.shipmnetCost = 3
   }
-
+  componentDidMount () {
+    window.addEventListener('resize', this.onresize)
+  }
+  onresize () {
+    return () => {
+      if (window.innerWidth > 768) {
+        this.setState({ isopen: true })
+      } else {
+        this.setState({ isOpen: false })
+      }
+    }
+  }
   increment (id) {
     return (e) => {
       const stockItem = selectIdItem(this.props.stock, id)
       if (stockItem.stock > 0) {
         this.props.dispatch(incrementAction(id))
-        this.setState({ noStock: false })
-      } else {
-        this.setState({ noStock: true })
       }
     }
   }
@@ -53,27 +61,42 @@ class Cart extends Component {
   }
   calcTotal () {
     const total = this.props.cart.reduce((acum, item) => {
-      let productItem = selectIdItem(this.props.products, item.productId)
-      let totalCost = parseInt(productItem.prize, 10) + acum
+      let productItem = selectProductItem(this.props.products, item.productId)
+      let totalCost = Number.parseFloat(productItem.prize) * item.amount + acum
       return totalCost
     }, 0)
     return total
   }
   render () {
-    return <div className='cart'>
+    return <div className='cart-wraper'>
+      <span className='cart-icon' onClick={e => this.setState({ isOpen: !this.state.isOpen })}>&#128722;<sapn className='items'>{this.props.cart.length}</sapn></span>
+      {this.isOpen && <div className='cart'>
 
-      {this.props.cart.map((e, i) => <CartItem add={this.increment} subtract={this.decrement} cartItem={e} index={i} products={this.props.products} noStock={this.state.noStock} />)}
+        {this.props.cart.map((e, i) => <CartItem add={this.increment(e.productId)} subtract={this.decrement(e.productId)} cartItem={e} key={i} products={this.props.products} stock={this.props.stock} />)}
+        {!this.props.cart.length && <p className='empty-cart'>The cart is empty</p>}
+        <div className='items-total'>
+          <span className='label'>Total cart value</span>
+          <span className='value'>{this.calcTotal().toFixed(2)} $</span>
+        </div>
+        <div className='shipment'>
+          <span className='label'>shipment cost</span>
+          <span className='value'>{this.shipmnetCost.toFixed(2)} $</span>
+        </div>
+        <div className='order-total'>
+          <span className='label'>total cost order</span>
+          <span className='value'>{(this.calcTotal() + this.shipmnetCost).toFixed(2)} $</span>
+        </div>
 
-      <div className='shipment'>
-        <span className='label'>shipment cost</span>
-        <span className='value'>{this.shipmnetCost} $</span>
-      </div>
-      <div className='total-amount'>
-        <span className='label'>Total payment</span>
-        <span className='value'>{this.calcTotal().toFixed(2)} $</span>
-      </div>
-      <span className='checkout-button'>checkout</span>
+        <span className='checkout-button'>checkout</span>
 
+      </div>}
+      <style jsx>{`
+        .cart-icon {
+          cursor: pointer
+          font-size: 1.6rem;
+        }
+      
+      `}</style>
     </div>
   }
 }
