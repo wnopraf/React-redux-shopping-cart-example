@@ -17,6 +17,7 @@ export default class extends Component {
             display: flex;
             flex-direction: column;
             text-align: center;
+            padding: 1rem 0;
         }
         @media (min-width: 480px) {
           .menu {
@@ -30,11 +31,13 @@ export default class extends Component {
             color: black;
             background: var(--treciary-color);
             border: 1px solid var(--grey-color);
+            margin-bottom: 1rem;
         }
         @media (min-width: 480px) {
             .menu__item {
                 padding: .6rem 2rem;
                 border: none;
+                margin-bottom: 0;
             }          
             .menu__item + .menu__item {
               border-left: 1px solid var(--grey-color);

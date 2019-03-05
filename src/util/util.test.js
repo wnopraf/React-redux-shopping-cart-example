@@ -1,4 +1,4 @@
-import { paginate, pageButtons } from './index'
+import { paginate, pageButtons, padDigits } from './index'
 
 describe('Testing pagination utils', () => {
   describe('items per page function', () => {
@@ -49,6 +49,20 @@ describe('Testing pagination utils', () => {
         const pages = pageButtons(items)
         expect(pages).toBe(4)
       })
+    })
+  })
+  describe('Pad function', () => {
+    test('Has 2 pads before point', () => {
+      expect(padDigits('237.50', '3.00')).toBe('  3.00')
+    })
+    test('Has 1 pads before point', () => {
+      expect(padDigits('37.50', '3.00')).toBe(' 3.00')
+    })
+    test('Has 4 pads before point', () => {
+      expect(padDigits('1537.50', '3.00')).toBe('   3.00')
+    })
+    test('Has 0 pads before point', () => {
+      expect(padDigits('7.50', '3.00')).toBe('3.00')
     })
   })
 })

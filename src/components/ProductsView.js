@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import store from '../store'
+import { incrementAction } from '../actions'
 import { pageButtons, paginate } from '../util'
 class productView extends Component {
   constructor (props) {
@@ -23,7 +25,7 @@ class productView extends Component {
   render () {
     return <div>
       <div className='products-view'>
-        {this.state.products.map((e, i) => <Products name={e.name} prize={e.prize} index={i} />)}
+        {this.state.products.map((e, i) => <Products name={e.name} prize={e.prize} index={i} id={e.id} />)}
       </div>
       <div className='pagination'>
         {this.createButtons()}
@@ -62,14 +64,14 @@ const PageButton = ({ e, i, onClick, page }) => {
   </span>
 }
 
-const Products = ({ name, prize, index }) => <section className='product' index={index}>
+const Products = ({ name, prize, index, id }) => <section className='product' key={index}>
   <h3>{name}</h3>
   <div className='product__prize'>
     <span className='product__label'>prize</span>
     &nbsp;&nbsp;
     <span className='product__value'>{prize}</span>
   </div>
-  <span className='cart-button' disabled>
+  <span className='cart-button' onClick={e => store.dispatch(incrementAction(id))}>
         Add to cart
   </span>
   <style jsx>{`

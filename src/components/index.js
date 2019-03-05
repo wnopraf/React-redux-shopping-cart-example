@@ -51,7 +51,12 @@ export default () => <Router>
     }
     @media (min-width: 992px) {
       .container {
-        max-width: 890px;
+        max-width: 100%;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1200px;
       }
       
     }

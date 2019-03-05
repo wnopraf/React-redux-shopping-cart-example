@@ -12,3 +12,11 @@ export function paginate (data, page, itemsPerPage = 6) {
   const products = data.slice(sliceStart, sliceEnd)
   return products
 }
+
+export function padDigits (pattern, number) {
+  const totalDigits = pattern.length
+  const digitsDiff = totalDigits - number.length
+  if (digitsDiff >= 0) return number
+  const nbs = '&nbs'
+  return nbs.repeat(2) + number
+}
