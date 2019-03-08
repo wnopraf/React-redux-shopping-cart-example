@@ -20,12 +20,12 @@ class productView extends Component {
   createButtons () {
     const { products } = this.props
     const totalPages = pageButtons(products)
-    return new Array(totalPages).fill(0).map((e, i) => <PageButton e={i + 1} i={i} page={this.state.page} onClick={this.onClick()} />)
+    return new Array(totalPages).fill(0).map((e, i) => <PageButton key={i} e={i + 1} page={this.state.page} onClick={this.onClick()} />)
   }
   render () {
     return <div>
       <div className='products-view'>
-        {this.state.products.map((e, i) => <Products name={e.name} prize={e.prize} index={i} id={e.id} />)}
+        {this.state.products.map((e, i) => <Products name={e.name} prize={e.prize} key={i} id={e.id} />)}
       </div>
       <div className='pagination'>
         {this.createButtons()}
@@ -45,14 +45,14 @@ class productView extends Component {
   }
 }
 
-const PageButton = ({ e, i, onClick, page }) => {
+const PageButton = ({ e, onClick, page }) => {
   let pickedPage
 
   if (e === page) {
     pickedPage = '#c0c9df'
   }
 
-  return <span onClick={onClick} className='page-button' index={i}>
+  return <span onClick={onClick} className='page-button' >
     {e}
     <style jsx>{`.page-button {
     display: inline-block;
@@ -71,7 +71,7 @@ const Products = ({ name, prize, index, id }) => <section className='product' ke
     &nbsp;&nbsp;
     <span className='product__value'>{prize}</span>
   </div>
-  <span className='cart-button' onClick={e => store.dispatch(incrementAction(id))}>
+  <span className='cart-button' data-testid={name} onClick={e => store.dispatch(incrementAction(id))}>
         Add to cart
   </span>
   <style jsx>{`

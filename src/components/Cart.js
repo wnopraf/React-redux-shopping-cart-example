@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import { incrementAction, decrementAction } from '../actions'
-import { selectProductItem, selectIdItem, padDigits } from '../util'
+import { incrementAction, decrementAction, checkOut } from '../actions'
+import { selectProductItem, selectIdItem } from '../util'
 import { connect } from 'react-redux'
+import { history } from './index'
+import store from '../store'
 
 const CartItem = ({ products, cartItem, add, subtract, stock }) => {
   const productItem = selectProductItem(products, cartItem.productId)
   const stockItem = selectIdItem(stock, cartItem.productId)
-  return <div className='cart-item' data-productId={cartItem.productId}>
+  return <div className='cart-item' data-testid={'data-item-' + productItem.name}>
     <div className='item-view'>
       <div className='item-features'>
         <img src='https://via.placeholder.com/50' alt='' />
@@ -76,7 +78,7 @@ const CartItem = ({ products, cartItem, add, subtract, stock }) => {
 class Cart extends Component {
   constructor (props) {
     super(props)
-    this.state = { isOpen: true, cart: true }
+    this.state = { isOpen: false }
     this.shipmnetCost = 3
   }
 
@@ -99,17 +101,23 @@ class Cart extends Component {
     }, 0)
     return total
   }
+  checkOut () {
+    return () => {
+      history.push('/checkout')
+      store.dispatch(checkOut())
+    }
+  }
   render () {
-    return <div className='cart-wrapper'>
+    return <div className='cart-wrapper' >
       <span className='cart-icon' onClick={e => this.setState({ isOpen: !this.state.isOpen })}>&#128722;<span className='cart-items'>{this.props.cart.length}</span></span>
-      {this.state.isOpen && <div className='cart'>
+      {this.state.isOpen && <div className='cart' data-testid='cart'>
 
         {this.props.cart.map((e, i) => <CartItem add={this.increment(e.productId)} subtract={this.decrement(e.productId)} cartItem={e} key={i} products={this.props.products} stock={this.props.stock} />)}
         {!this.props.cart.length && <p className='empty-cart'>The cart is empty</p>}
         <div className='pay-breakdown'>
           <div className='order-inputs'>
             <span className='label'>Total cart value </span>
-            <span className='value'>{this.calcTotal().toFixed(2)} $</span>
+            <span data-testid='cart-total' className='value'>{this.calcTotal().toFixed(2)} $</span>
           </div>
           <div className='order-inputs'>
             <span className='label'>shipment cost </span>
@@ -121,7 +129,7 @@ class Cart extends Component {
           </div>
 
           <div className='checkout-wrapper'>
-            <span className='checkout-button'>checkout</span>
+            <span onClick={this.checkOut()} className='checkout-button'>checkout</span>
           </div>
 
         </div>

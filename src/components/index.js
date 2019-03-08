@@ -1,9 +1,12 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Router, Route } from 'react-router-dom'
+import createBrowserHistory from 'history/createBrowserHistory'
 import Menu from './Menu'
 import MainView from './MainView'
 import CheckOutView from './CheckOut'
-export default () => <Router>
+
+export const history = createBrowserHistory()
+export default () => <Router history={history}>
   <div className='wrapper'>
     <header>
       <div className='container'>
@@ -19,7 +22,7 @@ export default () => <Router>
     </div>
 
     <div className='container'>
-      <Route path='/' component={MainView} />
+      <Route exact path='/' component={MainView} />
       <Route path='/checkout' component={CheckOutView} />
     </div>
     <footer>

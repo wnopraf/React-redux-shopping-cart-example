@@ -2,1306 +2,2507 @@
 
 exports[`Cart component elements Cart has 0 item 1`] = `
 <div
-  className="cart"
+  class="jsx-2560592302 cart-wrapper"
 >
-  <p
-    className="empty-cart"
-  >
-    The cart is empty
-  </p>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      0.00
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
   <span
-    className="checkout-button"
+    class="jsx-2560592302 cart-icon"
   >
-    checkout
+    🛒
+    <span
+      class="jsx-2560592302 cart-items"
+    >
+      0
+    </span>
   </span>
+  <div
+    class="jsx-2560592302 cart"
+    data-testid="cart"
+  >
+    <p
+      class="jsx-2560592302 empty-cart"
+    >
+      The cart is empty
+    </p>
+    <div
+      class="jsx-2560592302 pay-breakdown"
+    >
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          Total cart value 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+          data-testid="cart-total"
+        >
+          0.00
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          shipment cost 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          3.00
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          total cost order 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          3.00
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 checkout-wrapper"
+      >
+        <span
+          class="jsx-2560592302 checkout-button"
+        >
+          checkout
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Cart component elements Cart has 1 item 1`] = `
 <div
-  className="cart"
+  class="jsx-2560592302 cart-wrapper"
 >
-  <div
-    className="cart-item"
-    data-productId={4}
-  >
-    <div
-      className="item-view"
-    >
-      <div
-        className="item__features"
-      >
-        <h5>
-          product-D
-        </h5>
-      </div>
-    </div>
-    <div
-      className="item-value"
-    >
-      <div
-        className="item__prize"
-      >
-        <span
-          className="prize"
-        >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          135.66
-           x 
-          1
-           = 
-          135.66
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            1
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      135.66
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      138.66
-       $
-    </span>
-  </div>
   <span
-    className="checkout-button"
+    class="jsx-2560592302 cart-icon"
   >
-    checkout
+    🛒
+    <span
+      class="jsx-2560592302 cart-items"
+    >
+      1
+    </span>
   </span>
+  <div
+    class="jsx-2560592302 cart"
+    data-testid="cart"
+  >
+    <div
+      class="jsx-995397220 cart-item"
+      data-testid="data-item-product-C"
+    >
+      <div
+        class="jsx-995397220 item-view"
+      >
+        <div
+          class="jsx-995397220 item-features"
+        >
+          <img
+            alt=""
+            class="jsx-995397220"
+            src="https://via.placeholder.com/50"
+          />
+          <h5
+            class="jsx-995397220"
+          >
+            product-C
+          </h5>
+        </div>
+        <div
+          class="jsx-995397220 item-value"
+        >
+          <div
+            class="jsx-995397220 item-prize"
+          >
+            <span
+              class="jsx-995397220 prize"
+            >
+              prize 
+            </span>
+            <span
+              class="jsx-995397220 value"
+            >
+              66.02
+               $ x 
+              1
+               = 
+              66.02
+               $
+            </span>
+          </div>
+          <div
+            class="jsx-995397220 item-buttons"
+          >
+            <span
+              class="jsx-995397220 units"
+            >
+              units
+            </span>
+            <span
+              class="jsx-995397220 buttons"
+            >
+              <button
+                class="jsx-995397220 add"
+                data-add="true"
+              >
+                +
+              </button>
+              <span
+                class="jsx-995397220 amount"
+              >
+                1
+              </span>
+              <button
+                class="jsx-995397220 subtract"
+                data-subtract="true"
+              >
+                -
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="jsx-2560592302 pay-breakdown"
+    >
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          Total cart value 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+          data-testid="cart-total"
+        >
+          66.02
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          shipment cost 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          3.00
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          total cost order 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          69.02
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 checkout-wrapper"
+      >
+        <span
+          class="jsx-2560592302 checkout-button"
+        >
+          checkout
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Cart component elements Cart has 2 item 1`] = `
 <div
-  className="cart"
+  class="jsx-2560592302 cart-wrapper"
 >
-  <div
-    className="cart-item"
-    data-productId={4}
-  >
-    <div
-      className="item-view"
-    >
-      <div
-        className="item__features"
-      >
-        <h5>
-          product-D
-        </h5>
-      </div>
-    </div>
-    <div
-      className="item-value"
-    >
-      <div
-        className="item__prize"
-      >
-        <span
-          className="prize"
-        >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          135.66
-           x 
-          1
-           = 
-          135.66
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            1
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="cart-item"
-    data-productId={7}
-  >
-    <div
-      className="item-view"
-    >
-      <div
-        className="item__features"
-      >
-        <h5>
-          product-G
-        </h5>
-      </div>
-    </div>
-    <div
-      className="item-value"
-    >
-      <div
-        className="item__prize"
-      >
-        <span
-          className="prize"
-        >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          112.90
-           x 
-          1
-           = 
-          112.90
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            1
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      248.56
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      251.56
-       $
-    </span>
-  </div>
   <span
-    className="checkout-button"
+    class="jsx-2560592302 cart-icon"
   >
-    checkout
+    🛒
+    <span
+      class="jsx-2560592302 cart-items"
+    >
+      2
+    </span>
   </span>
+  <div
+    class="jsx-2560592302 cart"
+    data-testid="cart"
+  >
+    <div
+      class="jsx-995397220 cart-item"
+      data-testid="data-item-product-C"
+    >
+      <div
+        class="jsx-995397220 item-view"
+      >
+        <div
+          class="jsx-995397220 item-features"
+        >
+          <img
+            alt=""
+            class="jsx-995397220"
+            src="https://via.placeholder.com/50"
+          />
+          <h5
+            class="jsx-995397220"
+          >
+            product-C
+          </h5>
+        </div>
+        <div
+          class="jsx-995397220 item-value"
+        >
+          <div
+            class="jsx-995397220 item-prize"
+          >
+            <span
+              class="jsx-995397220 prize"
+            >
+              prize 
+            </span>
+            <span
+              class="jsx-995397220 value"
+            >
+              66.02
+               $ x 
+              1
+               = 
+              66.02
+               $
+            </span>
+          </div>
+          <div
+            class="jsx-995397220 item-buttons"
+          >
+            <span
+              class="jsx-995397220 units"
+            >
+              units
+            </span>
+            <span
+              class="jsx-995397220 buttons"
+            >
+              <button
+                class="jsx-995397220 add"
+                data-add="true"
+              >
+                +
+              </button>
+              <span
+                class="jsx-995397220 amount"
+              >
+                1
+              </span>
+              <button
+                class="jsx-995397220 subtract"
+                data-subtract="true"
+              >
+                -
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="jsx-995397220 cart-item"
+      data-testid="data-item-product-F"
+    >
+      <div
+        class="jsx-995397220 item-view"
+      >
+        <div
+          class="jsx-995397220 item-features"
+        >
+          <img
+            alt=""
+            class="jsx-995397220"
+            src="https://via.placeholder.com/50"
+          />
+          <h5
+            class="jsx-995397220"
+          >
+            product-F
+          </h5>
+        </div>
+        <div
+          class="jsx-995397220 item-value"
+        >
+          <div
+            class="jsx-995397220 item-prize"
+          >
+            <span
+              class="jsx-995397220 prize"
+            >
+              prize 
+            </span>
+            <span
+              class="jsx-995397220 value"
+            >
+              102.56
+               $ x 
+              1
+               = 
+              102.56
+               $
+            </span>
+          </div>
+          <div
+            class="jsx-995397220 item-buttons"
+          >
+            <span
+              class="jsx-995397220 units"
+            >
+              units
+            </span>
+            <span
+              class="jsx-995397220 buttons"
+            >
+              <button
+                class="jsx-995397220 add"
+                data-add="true"
+              >
+                +
+              </button>
+              <span
+                class="jsx-995397220 amount"
+              >
+                1
+              </span>
+              <button
+                class="jsx-995397220 subtract"
+                data-subtract="true"
+              >
+                -
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="jsx-2560592302 pay-breakdown"
+    >
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          Total cart value 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+          data-testid="cart-total"
+        >
+          168.58
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          shipment cost 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          3.00
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          total cost order 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          171.58
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 checkout-wrapper"
+      >
+        <span
+          class="jsx-2560592302 checkout-button"
+        >
+          checkout
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Cart component elements Cart lost 1 item 1`] = `
 <div
-  className="cart"
+  class="jsx-2560592302 cart-wrapper"
 >
-  <div
-    className="cart-item"
-    data-productId={7}
-  >
-    <div
-      className="item-view"
-    >
-      <div
-        className="item__features"
-      >
-        <h5>
-          product-G
-        </h5>
-      </div>
-    </div>
-    <div
-      className="item-value"
-    >
-      <div
-        className="item__prize"
-      >
-        <span
-          className="prize"
-        >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          112.90
-           x 
-          1
-           = 
-          112.90
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            1
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      112.90
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      115.90
-       $
-    </span>
-  </div>
   <span
-    className="checkout-button"
+    class="jsx-2560592302 cart-icon"
   >
-    checkout
+    🛒
+    <span
+      class="jsx-2560592302 cart-items"
+    >
+      1
+    </span>
   </span>
+  <div
+    class="jsx-2560592302 cart"
+    data-testid="cart"
+  >
+    <div
+      class="jsx-995397220 cart-item"
+      data-testid="data-item-product-C"
+    >
+      <div
+        class="jsx-995397220 item-view"
+      >
+        <div
+          class="jsx-995397220 item-features"
+        >
+          <img
+            alt=""
+            class="jsx-995397220"
+            src="https://via.placeholder.com/50"
+          />
+          <h5
+            class="jsx-995397220"
+          >
+            product-C
+          </h5>
+        </div>
+        <div
+          class="jsx-995397220 item-value"
+        >
+          <div
+            class="jsx-995397220 item-prize"
+          >
+            <span
+              class="jsx-995397220 prize"
+            >
+              prize 
+            </span>
+            <span
+              class="jsx-995397220 value"
+            >
+              66.02
+               $ x 
+              1
+               = 
+              66.02
+               $
+            </span>
+          </div>
+          <div
+            class="jsx-995397220 item-buttons"
+          >
+            <span
+              class="jsx-995397220 units"
+            >
+              units
+            </span>
+            <span
+              class="jsx-995397220 buttons"
+            >
+              <button
+                class="jsx-995397220 add"
+                data-add="true"
+              >
+                +
+              </button>
+              <span
+                class="jsx-995397220 amount"
+              >
+                1
+              </span>
+              <button
+                class="jsx-995397220 subtract"
+                data-subtract="true"
+              >
+                -
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="jsx-2560592302 pay-breakdown"
+    >
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          Total cart value 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+          data-testid="cart-total"
+        >
+          66.02
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          shipment cost 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          3.00
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 order-inputs"
+      >
+        <span
+          class="jsx-2560592302 label"
+        >
+          total cost order 
+        </span>
+        <span
+          class="jsx-2560592302 value"
+        >
+          69.02
+           $
+        </span>
+      </div>
+      <div
+        class="jsx-2560592302 checkout-wrapper"
+      >
+        <span
+          class="jsx-2560592302 checkout-button"
+        >
+          checkout
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Cart component elements Solo item test CartItem 5 has amount 2 1`] = `
-<div
-  className="cart"
->
+exports[`Solo item test Product-D has amount 2 1`] = `
+<div>
   <div
-    className="cart-item"
-    data-productId={7}
+    class="jsx-2816395300 wrapper"
   >
-    <div
-      className="item-view"
+    <header
+      class="jsx-2816395300"
     >
       <div
-        className="item__features"
+        class="jsx-2816395300 container"
       >
-        <h5>
-          product-G
-        </h5>
+        <h1
+          class="jsx-2816395300"
+        >
+          React shopping cart App
+        </h1>
       </div>
-    </div>
+    </header>
     <div
-      className="item-value"
+      class="jsx-2816395300 nav"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <div
+          class="jsx-2682664630"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          112.90
-           x 
-          1
-           = 
-          112.90
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
           <span
-            className="amount"
+            class="jsx-2682664630 ham-button"
           >
-            1
+            ☰
           </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
+          <div
+            class="jsx-1508232557 menu"
           >
-            -
-          </button>
-        </span>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Home
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              About
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Pricing
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Blog
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="cart-item"
-    data-productId={5}
-  >
     <div
-      className="item-view"
+      class="jsx-2816395300 container"
     >
       <div
-        className="item__features"
+        class="jsx-475246952 main-view"
       >
-        <h5>
-          product-E
-        </h5>
+        <div
+          class="jsx-475246952 cart-view"
+        >
+          <div
+            class="jsx-2560592302 cart-wrapper"
+          >
+            <span
+              class="jsx-2560592302 cart-icon"
+            >
+              🛒
+              <span
+                class="jsx-2560592302 cart-items"
+              >
+                1
+              </span>
+            </span>
+            <div
+              class="jsx-2560592302 cart"
+              data-testid="cart"
+            >
+              <div
+                class="jsx-995397220 cart-item"
+                data-testid="data-item-product-D"
+              >
+                <div
+                  class="jsx-995397220 item-view"
+                >
+                  <div
+                    class="jsx-995397220 item-features"
+                  >
+                    <img
+                      alt=""
+                      class="jsx-995397220"
+                      src="https://via.placeholder.com/50"
+                    />
+                    <h5
+                      class="jsx-995397220"
+                    >
+                      product-D
+                    </h5>
+                  </div>
+                  <div
+                    class="jsx-995397220 item-value"
+                  >
+                    <div
+                      class="jsx-995397220 item-prize"
+                    >
+                      <span
+                        class="jsx-995397220 prize"
+                      >
+                        prize 
+                      </span>
+                      <span
+                        class="jsx-995397220 value"
+                      >
+                        135.66
+                         $ x 
+                        2
+                         = 
+                        271.32
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="jsx-995397220 item-buttons"
+                    >
+                      <span
+                        class="jsx-995397220 units"
+                      >
+                        units
+                      </span>
+                      <span
+                        class="jsx-995397220 buttons"
+                      >
+                        <button
+                          class="jsx-995397220 add"
+                          data-add="true"
+                        >
+                          +
+                        </button>
+                        <span
+                          class="jsx-995397220 amount"
+                        >
+                          2
+                        </span>
+                        <button
+                          class="jsx-995397220 subtract"
+                          data-subtract="true"
+                        >
+                          -
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="jsx-2560592302 pay-breakdown"
+              >
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    Total cart value 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                    data-testid="cart-total"
+                  >
+                    271.32
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    shipment cost 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    3.00
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    total cost order 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    274.32
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 checkout-wrapper"
+                >
+                  <span
+                    class="jsx-2560592302 checkout-button"
+                  >
+                    checkout
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="jsx-475246952 product-view"
+        >
+          <div
+            class="jsx-2625038711"
+          >
+            <div
+              class="jsx-2625038711 products-view"
+            >
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-A
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    68.00
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-A"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-B
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    114.10
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-B"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-C
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    66.02
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-C"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-D
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    135.66
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-D"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-E
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    136.68
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-E"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-F
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    102.56
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-F"
+                >
+                  Add to cart
+                </span>
+              </section>
+            </div>
+            <div
+              class="jsx-2625038711 pagination"
+            >
+              <span
+                class="jsx-563303081 page-button"
+              >
+                1
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                2
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                3
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                4
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                5
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div
-      className="item-value"
+    <footer
+      class="jsx-2816395300"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <h3
+          class="jsx-2816395300"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          136.68
-           x 
-          2
-           = 
-          273.36
-        </span>
+          All rights reserved to react cart shopping sample. ©
+        </h3>
       </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            2
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-    </div>
+    </footer>
   </div>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      386.26
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      389.26
-       $
-    </span>
-  </div>
-  <span
-    className="checkout-button"
-  >
-    checkout
-  </span>
 </div>
 `;
 
-exports[`Cart component elements Solo item test CartItem 5 has amount 2 2`] = `
-<div
-  className="cart"
->
+exports[`Solo item test Product-D has amount 2 2`] = `
+<div>
   <div
-    className="cart-item"
-    data-productId={7}
+    class="jsx-2816395300 wrapper"
   >
-    <div
-      className="item-view"
+    <header
+      class="jsx-2816395300"
     >
       <div
-        className="item__features"
+        class="jsx-2816395300 container"
       >
-        <h5>
-          product-G
-        </h5>
+        <h1
+          class="jsx-2816395300"
+        >
+          React shopping cart App
+        </h1>
       </div>
-    </div>
+    </header>
     <div
-      className="item-value"
+      class="jsx-2816395300 nav"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <div
+          class="jsx-2682664630"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          112.90
-           x 
-          1
-           = 
-          112.90
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
           <span
-            className="amount"
+            class="jsx-2682664630 ham-button"
           >
-            1
+            ☰
           </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
+          <div
+            class="jsx-1508232557 menu"
           >
-            -
-          </button>
-        </span>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Home
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              About
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Pricing
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Blog
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="cart-item"
-    data-productId={5}
-  >
     <div
-      className="item-view"
+      class="jsx-2816395300 container"
     >
       <div
-        className="item__features"
+        class="jsx-475246952 main-view"
       >
-        <h5>
-          product-E
-        </h5>
+        <div
+          class="jsx-475246952 cart-view"
+        >
+          <div
+            class="jsx-2560592302 cart-wrapper"
+          >
+            <span
+              class="jsx-2560592302 cart-icon"
+            >
+              🛒
+              <span
+                class="jsx-2560592302 cart-items"
+              >
+                1
+              </span>
+            </span>
+            <div
+              class="jsx-2560592302 cart"
+              data-testid="cart"
+            >
+              <div
+                class="jsx-995397220 cart-item"
+                data-testid="data-item-product-D"
+              >
+                <div
+                  class="jsx-995397220 item-view"
+                >
+                  <div
+                    class="jsx-995397220 item-features"
+                  >
+                    <img
+                      alt=""
+                      class="jsx-995397220"
+                      src="https://via.placeholder.com/50"
+                    />
+                    <h5
+                      class="jsx-995397220"
+                    >
+                      product-D
+                    </h5>
+                  </div>
+                  <div
+                    class="jsx-995397220 item-value"
+                  >
+                    <div
+                      class="jsx-995397220 item-prize"
+                    >
+                      <span
+                        class="jsx-995397220 prize"
+                      >
+                        prize 
+                      </span>
+                      <span
+                        class="jsx-995397220 value"
+                      >
+                        135.66
+                         $ x 
+                        2
+                         = 
+                        271.32
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="jsx-995397220 item-buttons"
+                    >
+                      <span
+                        class="jsx-995397220 units"
+                      >
+                        units
+                      </span>
+                      <span
+                        class="jsx-995397220 buttons"
+                      >
+                        <button
+                          class="jsx-995397220 add"
+                          data-add="true"
+                        >
+                          +
+                        </button>
+                        <span
+                          class="jsx-995397220 amount"
+                        >
+                          2
+                        </span>
+                        <button
+                          class="jsx-995397220 subtract"
+                          data-subtract="true"
+                        >
+                          -
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="jsx-2560592302 pay-breakdown"
+              >
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    Total cart value 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                    data-testid="cart-total"
+                  >
+                    271.32
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    shipment cost 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    3.00
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    total cost order 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    274.32
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 checkout-wrapper"
+                >
+                  <span
+                    class="jsx-2560592302 checkout-button"
+                  >
+                    checkout
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="jsx-475246952 product-view"
+        >
+          <div
+            class="jsx-2625038711"
+          >
+            <div
+              class="jsx-2625038711 products-view"
+            >
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-A
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    68.00
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-A"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-B
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    114.10
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-B"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-C
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    66.02
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-C"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-D
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    135.66
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-D"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-E
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    136.68
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-E"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-F
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    102.56
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-F"
+                >
+                  Add to cart
+                </span>
+              </section>
+            </div>
+            <div
+              class="jsx-2625038711 pagination"
+            >
+              <span
+                class="jsx-563303081 page-button"
+              >
+                1
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                2
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                3
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                4
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                5
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div
-      className="item-value"
+    <footer
+      class="jsx-2816395300"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <h3
+          class="jsx-2816395300"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          136.68
-           x 
-          2
-           = 
-          273.36
-        </span>
+          All rights reserved to react cart shopping sample. ©
+        </h3>
       </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            2
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-    </div>
+    </footer>
   </div>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      386.26
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      389.26
-       $
-    </span>
-  </div>
-  <span
-    className="checkout-button"
-  >
-    checkout
-  </span>
 </div>
 `;
 
-exports[`Cart component elements Solo item test CartItem 5 has amount 3 1`] = `
-<div
-  className="cart"
->
+exports[`Solo item test Product-D has amount 3 1`] = `
+<div>
   <div
-    className="cart-item"
-    data-productId={7}
+    class="jsx-2816395300 wrapper"
   >
-    <div
-      className="item-view"
+    <header
+      class="jsx-2816395300"
     >
       <div
-        className="item__features"
+        class="jsx-2816395300 container"
       >
-        <h5>
-          product-G
-        </h5>
+        <h1
+          class="jsx-2816395300"
+        >
+          React shopping cart App
+        </h1>
       </div>
-    </div>
+    </header>
     <div
-      className="item-value"
+      class="jsx-2816395300 nav"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <div
+          class="jsx-2682664630"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          112.90
-           x 
-          1
-           = 
-          112.90
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
           <span
-            className="amount"
+            class="jsx-2682664630 ham-button"
           >
-            1
+            ☰
           </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
+          <div
+            class="jsx-1508232557 menu"
           >
-            -
-          </button>
-        </span>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Home
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              About
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Pricing
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Blog
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="cart-item"
-    data-productId={5}
-  >
     <div
-      className="item-view"
+      class="jsx-2816395300 container"
     >
       <div
-        className="item__features"
+        class="jsx-475246952 main-view"
       >
-        <h5>
-          product-E
-        </h5>
+        <div
+          class="jsx-475246952 cart-view"
+        >
+          <div
+            class="jsx-2560592302 cart-wrapper"
+          >
+            <span
+              class="jsx-2560592302 cart-icon"
+            >
+              🛒
+              <span
+                class="jsx-2560592302 cart-items"
+              >
+                1
+              </span>
+            </span>
+            <div
+              class="jsx-2560592302 cart"
+              data-testid="cart"
+            >
+              <div
+                class="jsx-995397220 cart-item"
+                data-testid="data-item-product-D"
+              >
+                <div
+                  class="jsx-995397220 item-view"
+                >
+                  <div
+                    class="jsx-995397220 item-features"
+                  >
+                    <img
+                      alt=""
+                      class="jsx-995397220"
+                      src="https://via.placeholder.com/50"
+                    />
+                    <h5
+                      class="jsx-995397220"
+                    >
+                      product-D
+                    </h5>
+                  </div>
+                  <div
+                    class="jsx-995397220 item-value"
+                  >
+                    <div
+                      class="jsx-995397220 item-prize"
+                    >
+                      <span
+                        class="jsx-995397220 prize"
+                      >
+                        prize 
+                      </span>
+                      <span
+                        class="jsx-995397220 value"
+                      >
+                        135.66
+                         $ x 
+                        3
+                         = 
+                        406.98
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="jsx-995397220 item-buttons"
+                    >
+                      <span
+                        class="jsx-995397220 units"
+                      >
+                        units
+                      </span>
+                      <span
+                        class="jsx-995397220 buttons"
+                      >
+                        <button
+                          class="jsx-995397220 add"
+                          data-add="true"
+                        >
+                          +
+                        </button>
+                        <span
+                          class="jsx-995397220 amount"
+                        >
+                          3
+                        </span>
+                        <button
+                          class="jsx-995397220 subtract"
+                          data-subtract="true"
+                        >
+                          -
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="jsx-2560592302 pay-breakdown"
+              >
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    Total cart value 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                    data-testid="cart-total"
+                  >
+                    406.98
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    shipment cost 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    3.00
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    total cost order 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    409.98
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 checkout-wrapper"
+                >
+                  <span
+                    class="jsx-2560592302 checkout-button"
+                  >
+                    checkout
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="jsx-475246952 product-view"
+        >
+          <div
+            class="jsx-2625038711"
+          >
+            <div
+              class="jsx-2625038711 products-view"
+            >
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-A
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    68.00
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-A"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-B
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    114.10
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-B"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-C
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    66.02
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-C"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-D
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    135.66
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-D"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-E
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    136.68
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-E"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-F
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    102.56
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-F"
+                >
+                  Add to cart
+                </span>
+              </section>
+            </div>
+            <div
+              class="jsx-2625038711 pagination"
+            >
+              <span
+                class="jsx-563303081 page-button"
+              >
+                1
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                2
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                3
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                4
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                5
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div
-      className="item-value"
+    <footer
+      class="jsx-2816395300"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <h3
+          class="jsx-2816395300"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          136.68
-           x 
-          3
-           = 
-          410.04
-        </span>
+          All rights reserved to react cart shopping sample. ©
+        </h3>
       </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            3
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-    </div>
+    </footer>
   </div>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      522.94
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      525.94
-       $
-    </span>
-  </div>
-  <span
-    className="checkout-button"
-  >
-    checkout
-  </span>
 </div>
 `;
 
-exports[`Cart component elements Solo item test CartItem 5 has no stock 1`] = `
-<div
-  className="cart"
->
+exports[`Solo item test Product-D has no stock 1`] = `
+<div>
   <div
-    className="cart-item"
-    data-productId={7}
+    class="jsx-2816395300 wrapper"
   >
-    <div
-      className="item-view"
+    <header
+      class="jsx-2816395300"
     >
       <div
-        className="item__features"
+        class="jsx-2816395300 container"
       >
-        <h5>
-          product-G
-        </h5>
+        <h1
+          class="jsx-2816395300"
+        >
+          React shopping cart App
+        </h1>
       </div>
-    </div>
+    </header>
     <div
-      className="item-value"
+      class="jsx-2816395300 nav"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <div
+          class="jsx-2682664630"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          112.90
-           x 
-          1
-           = 
-          112.90
-        </span>
-      </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="add"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
           <span
-            className="amount"
+            class="jsx-2682664630 ham-button"
           >
-            1
+            ☰
           </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
+          <div
+            class="jsx-1508232557 menu"
           >
-            -
-          </button>
-        </span>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Home
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              About
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Pricing
+            </a>
+            <a
+              class="jsx-1508232557 menu__item"
+              href=""
+            >
+              Blog
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="cart-item"
-    data-productId={5}
-  >
     <div
-      className="item-view"
+      class="jsx-2816395300 container"
     >
       <div
-        className="item__features"
+        class="jsx-475246952 main-view"
       >
-        <h5>
-          product-E
-        </h5>
+        <div
+          class="jsx-475246952 cart-view"
+        >
+          <div
+            class="jsx-2560592302 cart-wrapper"
+          >
+            <span
+              class="jsx-2560592302 cart-icon"
+            >
+              🛒
+              <span
+                class="jsx-2560592302 cart-items"
+              >
+                1
+              </span>
+            </span>
+            <div
+              class="jsx-2560592302 cart"
+              data-testid="cart"
+            >
+              <div
+                class="jsx-995397220 cart-item"
+                data-testid="data-item-product-D"
+              >
+                <div
+                  class="jsx-995397220 item-view"
+                >
+                  <div
+                    class="jsx-995397220 item-features"
+                  >
+                    <img
+                      alt=""
+                      class="jsx-995397220"
+                      src="https://via.placeholder.com/50"
+                    />
+                    <h5
+                      class="jsx-995397220"
+                    >
+                      product-D
+                    </h5>
+                  </div>
+                  <div
+                    class="jsx-995397220 item-value"
+                  >
+                    <div
+                      class="jsx-995397220 item-prize"
+                    >
+                      <span
+                        class="jsx-995397220 prize"
+                      >
+                        prize 
+                      </span>
+                      <span
+                        class="jsx-995397220 value"
+                      >
+                        135.66
+                         $ x 
+                        13
+                         = 
+                        1763.58
+                         $
+                      </span>
+                    </div>
+                    <div
+                      class="jsx-995397220 item-buttons"
+                    >
+                      <span
+                        class="jsx-995397220 units"
+                      >
+                        units
+                      </span>
+                      <span
+                        class="jsx-995397220 buttons"
+                      >
+                        <button
+                          class="jsx-995397220 add"
+                          data-add="true"
+                          disabled=""
+                        >
+                          +
+                        </button>
+                        <span
+                          class="jsx-995397220 amount"
+                        >
+                          13
+                        </span>
+                        <button
+                          class="jsx-995397220 subtract"
+                          data-subtract="true"
+                        >
+                          -
+                        </button>
+                      </span>
+                    </div>
+                    <div
+                      class="jsx-995397220 no-stock"
+                    >
+                      Out of existences
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="jsx-2560592302 pay-breakdown"
+              >
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    Total cart value 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                    data-testid="cart-total"
+                  >
+                    1763.58
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    shipment cost 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    3.00
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 order-inputs"
+                >
+                  <span
+                    class="jsx-2560592302 label"
+                  >
+                    total cost order 
+                  </span>
+                  <span
+                    class="jsx-2560592302 value"
+                  >
+                    1766.58
+                     $
+                  </span>
+                </div>
+                <div
+                  class="jsx-2560592302 checkout-wrapper"
+                >
+                  <span
+                    class="jsx-2560592302 checkout-button"
+                  >
+                    checkout
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="jsx-475246952 product-view"
+        >
+          <div
+            class="jsx-2625038711"
+          >
+            <div
+              class="jsx-2625038711 products-view"
+            >
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-A
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    68.00
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-A"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-B
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    114.10
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-B"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-C
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    66.02
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-C"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-D
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    135.66
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-D"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-E
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    136.68
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-E"
+                >
+                  Add to cart
+                </span>
+              </section>
+              <section
+                class="jsx-3043241126 product"
+              >
+                <h3
+                  class="jsx-3043241126"
+                >
+                  product-F
+                </h3>
+                <div
+                  class="jsx-3043241126 product__prize"
+                >
+                  <span
+                    class="jsx-3043241126 product__label"
+                  >
+                    prize
+                  </span>
+                    
+                  <span
+                    class="jsx-3043241126 product__value"
+                  >
+                    102.56
+                  </span>
+                </div>
+                <span
+                  class="jsx-3043241126 cart-button"
+                  data-testid="product-F"
+                >
+                  Add to cart
+                </span>
+              </section>
+            </div>
+            <div
+              class="jsx-2625038711 pagination"
+            >
+              <span
+                class="jsx-563303081 page-button"
+              >
+                1
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                2
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                3
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                4
+              </span>
+              <span
+                class="jsx-3426711900 page-button"
+              >
+                5
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div
-      className="item-value"
+    <footer
+      class="jsx-2816395300"
     >
       <div
-        className="item__prize"
+        class="jsx-2816395300 container"
       >
-        <span
-          className="prize"
+        <h3
+          class="jsx-2816395300"
         >
-          prize
-        </span>
-        <span
-          className="value"
-        >
-          136.68
-           x 
-          13
-           = 
-          1776.84
-        </span>
+          All rights reserved to react cart shopping sample. ©
+        </h3>
       </div>
-      <div
-        className="item-buttons"
-      >
-        <span
-          className="units"
-        >
-          units
-        </span>
-        <span
-          className="buttons"
-        >
-          <button
-            className="adddisabled"
-            data-add={true}
-            onClick={[Function]}
-          >
-            +
-          </button>
-          <span
-            className="amount"
-          >
-            13
-          </span>
-          <button
-            className="subtract"
-            data-subtract={true}
-            onClick={[Function]}
-          >
-            -
-          </button>
-        </span>
-      </div>
-      <div
-        className="no-stock"
-      >
-        Out of existences
-      </div>
-    </div>
+    </footer>
   </div>
-  <div
-    className="items-total"
-  >
-    <span
-      className="label"
-    >
-      Total cart value
-    </span>
-    <span
-      className="value"
-    >
-      1889.74
-       $
-    </span>
-  </div>
-  <div
-    className="shipment"
-  >
-    <span
-      className="label"
-    >
-      shipment cost
-    </span>
-    <span
-      className="value"
-    >
-      3.00
-       $
-    </span>
-  </div>
-  <div
-    className="order-total"
-  >
-    <span
-      className="label"
-    >
-      total cost order
-    </span>
-    <span
-      className="value"
-    >
-      1892.74
-       $
-    </span>
-  </div>
-  <span
-    className="checkout-button"
-  >
-    checkout
-  </span>
 </div>
 `;

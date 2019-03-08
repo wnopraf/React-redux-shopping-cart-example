@@ -1,79 +1,87 @@
 import React from 'react'
-import Cart from './Cart'
 import store from '../store'
-import { incrementAction, decrementAction } from '../actions'
+import Main, { history } from './index'
 import { Provider } from 'react-redux'
-import createComponent from 'react-unit'
-import renderer from 'react-test-renderer'
 import { selectIdItem } from '../util'
+import { fireEvent, render, getByText as globalByText } from 'react-testing-library'
+import 'jest-dom/extend-expect'
+
+const { getByText, container, getByTestId, queryByTestId } = render(<Provider store={store}><Main /></Provider>)
 
 describe('Cart component elements', () => {
-  let cart
-  let cartDom
-  beforeAll(() => {
-    cart = renderer.create(<Provider store={store}><Cart /></Provider>)
-    cartDom = cart.root
-  })
-
   test('Cart has 0 item', () => {
     expect.assertions(2)
-    expect(cart.toJSON()).toMatchSnapshot()
-    expect(cartDom.findAllByProps({ className: 'cart-item' }).length).toBe(0)
+    expect(container.querySelector('.cart-wrapper')).toMatchSnapshot()
+
+    console.log(store.getState().cart)
+    expect(queryByTestId('data-item-product-C')).not.toBeInTheDocument()
   })
   test('Cart has 1 item', () => {
-    store.dispatch(incrementAction(4))
+    fireEvent.click(getByTestId('product-C'))
     expect.assertions(2)
-
-    expect(cart.toJSON()).toMatchSnapshot()
-    expect(cartDom.findAllByProps({ className: 'cart-item' }).length).toBe(1)
+    expect(container.querySelector('.cart-wrapper')).toMatchSnapshot()
+    expect(queryByTestId('data-item-product-C')).toBeInTheDocument()
   })
   test('Cart has 2 item', () => {
     expect.assertions(2)
-    store.dispatch(incrementAction(7))
-    expect(cart.toJSON()).toMatchSnapshot()
-    expect(cartDom.findAllByProps({ className: 'cart-item' }).length).toBe(2)
+    fireEvent.click(getByTestId('product-F'))
+    expect(container.querySelector('.cart-wrapper')).toMatchSnapshot()
+    expect(queryByTestId('data-item-product-F')).toBeInTheDocument()
   })
   test('Cart lost 1 item', () => {
-    expect.assertions(3)
-    store.dispatch(decrementAction(4))
-    expect(cart.toJSON()).toMatchSnapshot()
-    expect(cartDom.findAllByProps({ className: 'cart-item' }).length).toBe(1)
-    expect(cartDom.findAll(e => e.props['data-productId'] === 4).length).toBe(0)
+    expect.assertions(2)
+    fireEvent.click(getByTestId('data-item-product-F').querySelector('[data-subtract]'))
+    expect(container.querySelector('.cart-wrapper')).toMatchSnapshot()
+    expect(queryByTestId('data-item-product-F')).not.toBeInTheDocument()
   })
-  describe('Solo item test', () => {
-    let item_5
-    beforeAll(() => {
-      store.dispatch(incrementAction(5))
-      item_5 = cartDom.find(e => e.props['data-productId'] === 5)
-    })
-    test('CartItem 5 has amount 2', () => {
-      expect.assertions(2)
+  test('Cart is empty', (done) => {
+    fireEvent.click(getByText('checkout'))
+    expect(history.location.pathname).toBe('/checkout')
+    expect(container.querySelector('.loading-animation')).toBeInTheDocument()
 
-      item_5.find(e => e.props['data-add']).props.onClick()
-      expect(cart.toJSON()).toMatchSnapshot()
-      expect(item_5.find(e => e.props.className === 'amount').children[0]).toBe('2')
-    })
-    test('CartItem 5 has amount 3', () => {
-      expect.assertions(2)
-      item_5.find(e => e.props['data-add']).props.onClick()
-      expect(cart.toJSON()).toMatchSnapshot()
-      expect(item_5.find(e => e.props.className === 'amount').children[0]).toBe('3')
-    })
-    test('CartItem 5 has amount 2', () => {
-      expect.assertions(2)
-      item_5.find(e => e.props.className === 'subtract').props.onClick()
-      expect(cart.toJSON()).toMatchSnapshot()
-      expect(item_5.find(e => e.props.className === 'amount').children[0]).toBe('2')
-    })
-    test('CartItem 5 has no stock', () => {
-      let stockItem = selectIdItem(store.getState().stock, 5)
-      while (stockItem.stock > 0) {
-        store.dispatch(incrementAction(5))
-        stockItem = selectIdItem(store.getState().stock, 5)
-      }
-      item_5.find(e => e.props['data-add']).props.onClick()
-      expect(cart.toJSON()).toMatchSnapshot()
-      expect(item_5.findAll(e => e.props.className === 'no-stock').length).toBe(1)
-    })
+    setTimeout(() => {
+      expect(history.location.pathname).toBe('/')
+      expect(getByTestId('cart-total')).toHaveTextContent('0.00 $')
+      done()
+    }, 1002)
+  })
+})
+describe('Solo item test', () => {
+  let productD
+  let cartItemD
+  beforeAll(() => {
+    productD = getByTestId('product-D')
+    fireEvent.click(globalByText(productD, 'Add to cart'))
+    cartItemD = getByTestId('data-item-product-D')
+  })
+  test('Product-D has amount 2', () => {
+    expect.assertions(2)
+
+    fireEvent.click(globalByText(cartItemD, '+'))
+    expect(container).toMatchSnapshot()
+    expect(globalByText(cartItemD, /^2$/)).toHaveTextContent('2')
+  })
+  test('Product-D has amount 3', () => {
+    expect.assertions(2)
+    fireEvent.click(globalByText(cartItemD, '+'))
+    expect(container).toMatchSnapshot()
+    expect(globalByText(cartItemD, /^3$/)).toHaveTextContent('3')
+  })
+  test('Product-D has amount 2', () => {
+    expect.assertions(2)
+    fireEvent.click(globalByText(cartItemD, '-'))
+    expect(container).toMatchSnapshot()
+    expect(globalByText(cartItemD, /^2$/)).toHaveTextContent('2')
+  })
+  test('Product-D has no stock', () => {
+    expect.assertions(2)
+    let stockItem = selectIdItem(store.getState().stock, 4)
+    while (stockItem.stock > 0) {
+      fireEvent.click(globalByText(cartItemD, '+'))
+      stockItem = selectIdItem(store.getState().stock, 4)
+    }
+    fireEvent.click(globalByText(cartItemD, '+'))
+    expect(globalByText(cartItemD, 'Out of existences')).toHaveTextContent('Out of existences')
+    expect(container).toMatchSnapshot()
   })
 })

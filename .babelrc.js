@@ -7,8 +7,7 @@
   ],
   plugins: [
     [
-      "styled-jsx/babel",
-      { "plugins": ["styled-jsx-plugin-stylelint"] }
+      "styled-jsx/babel"
     ] 
   ]
 }
