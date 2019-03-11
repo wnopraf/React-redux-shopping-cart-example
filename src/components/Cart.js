@@ -137,11 +137,11 @@ class Cart extends Component {
       </div>}
       <style jsx>{`
         .cart-wrapper {
-          
           width: 100%;
           font-size: 1.6rem;
           position: relative;
           display: flex;
+          padding-top: 2rem;
         }
         
         .cart-icon {
@@ -158,7 +158,7 @@ class Cart extends Component {
           box-shadow: 0 0 9px 0px #e3dddd;
           padding: 2rem;
           right: 2rem;
-          top: 5rem;
+          top: 6.5rem;
         }
         .cart-items {
           position: absolute;

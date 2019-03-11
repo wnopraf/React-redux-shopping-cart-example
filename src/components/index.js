@@ -31,23 +31,14 @@ export default () => <Router history={history}>
       </div>
 
     </footer>
-    <style jsx global>{`
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
+    <style jsx >{`
+    
     .wrapper {
      font-size: 1.6rem;
      font-family: 'Lato', sans-serif;
 
     }
-    :root {
-      font-size: 10px;
-      --primary-color: #BACBFC;
-      --secondary-color: #36487B;
-      --grey-color: #DEE5F7;
-      --terciary-color: #6E92FB;
-      --fourth-color: #5875C8;
-    }
+    
     .container {
       padding: 0 1.4rem;
       margin: 0 auto;
@@ -65,6 +56,11 @@ export default () => <Router history={history}>
     }
     h1 {
       font-size: 2.5rem;
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 5rem;
+      }
     }
     h3 {
       font-size: 2rem;
@@ -89,10 +85,14 @@ export default () => <Router history={history}>
       background: var(--secondary-color);
     }
     footer h3 {
-      font-size: .9rem;
+      font-size: 1.3rem;
       color: var(--grey-color);
     }
-    
+    @media (min-width: 768px) {
+     footer h3 {
+        font-size: 2rem;
+      }
+    }
   `}</style>
   </div>
 
