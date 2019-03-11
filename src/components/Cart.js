@@ -103,6 +103,7 @@ class Cart extends Component {
   }
   checkOut () {
     return () => {
+      if (!this.props.cart.length) return
       history.push('/checkout')
       store.dispatch(checkOut())
     }
